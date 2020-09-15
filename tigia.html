@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi tỉ giá giữa đô la và việt nam đồng</title>
+</head>
+<body>
+<table>
+        <tr>
+            <td>
+                <label for="amount" > <b> Amount </b> </label> <br>
+                <input type="number" id="amount" />
+            </td>
+            <td>
+            <label for="from" > <b> From Currenncy </b> </label> <br>
+                <select id="from" >
+                <option value="23000"> Việt Nam Đồng</option>
+                <option value="1"> Đô La Mít</option>
+                </select>
+            </td>
+            <td>
+                <label for="to" > <b> To Curenccy </b> </label> <br>
+                <select id="to">
+                    <option  value="1"> Đô La Mít</option>
+                    <option  value="23000"> Việt Nam Đồng</option>
+                </select>
+            </td>
+            <td>
+                <br>
+                <input type="button" value="Convert" onclick="changeMoney()"/>
+
+            </td>
+        </tr>
+</table>
+    <p style="color: blue" id="result">Result</p>
+    <script src="change.js"></script>
+</body>
+</html>
